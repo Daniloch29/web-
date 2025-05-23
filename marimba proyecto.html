@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marimba Chapina</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f3f3f3;
+      color: #333;
+    }
+
+    header {
+      background-image: url('https://media.gettyimages.com/id/85005548/es/foto/unspecified-circa-1970-photo-of-percussion-and-marimba-and-instruments.jpg?s=2048x2048&w=gi&k=20&c=bQTlzjLpO9oImb4jWqwydzdTZIAfo1_mobDAnkKwZ14=');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .instrumentos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .marimba-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 250px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .marimba-card:hover {
+      transform: scale(1.05);
+    }
+
+    .marimba-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .marimba-card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .marimba-card p {
+      padding: 0 10px 15px;
+      font-size: 0.95em;
+    }
+
+    .video {
+      background-color: #eee;
+      padding: 40px 20px;
+    }
+
+    .video iframe {
+      width: 90%;
+      max-width: 600px;
+      height: 340px;
+      border: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .links-marimba {
+      margin-top: 20px;
+    }
+
+    .links-marimba a {
+      display: inline-block;
+      margin: 10px 15px;
+      text-decoration: none;
+      color: #b22222;
+      font-weight: bold;
+    }
+
+    .links-marimba a:hover {
+      text-decoration: underline;
+    }
+
+    .formulario {
+      background-color: #f9f9f9;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .formulario form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .formulario input[type="text"],
+    .formulario input[type="number"] {
+      padding: 10px;
+      font-size: 1em;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .formulario input[type="submit"] {
+      background-color: #b22222;
+      color: white;
+      padding: 10px;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .formulario input[type="submit"]:hover {
+      background-color: #8b1a1a;
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Marimba Chapina</h1>
+    <p>Descubre el alma musical de Guatemala</p>
+  </header>
+
+  <section>
+    <h2>Tipos de marimbas guatemaltecas</h2>
+    <div class="instrumentos">
+      <div class="marimba-card">
+        <img src="https://agn.gt/wp-content/uploads/2022/02/CRJ_5603-1.jpg" alt="Marimba doble" />
+        <h3>Marimba doble</h3>
+        <p>Una marimba tradicional utilizada en conjuntos más grandes.</p>
+      </div>
+      <div class="marimba-card">
+        <img src="https://cdn.republica.com/102021/1635543224242.jpg?cw=1200&ch=801" alt="Marimba sencilla" />
+        <h3>Marimba sencilla</h3>
+        <p>Ideal para músicos solistas o presentaciones pequeñas.</p>
+      </div>
+      <div class="marimba-card">
+        <img src="https://www.guatemala.com/fotos/2019/06/Conoce-el-talento-de-los-jovenes-marimba.jpg" alt="Marimba escolar" />
+        <h3>Marimba escolar</h3>
+        <p>Usada en instituciones educativas para la formación musical.</p>
+      </div>
+      <div class="marimba-card">
+        <img src="https://digeu.usac.edu.gt/wp-content/uploads/2020/05/marimba-de-concierto-usac.jpg" alt="Marimba de concierto" />
+        <h3>Marimba de concierto</h3>
+        <p>Empleada en escenarios formales con sonidos refinados.</p>
+      </div>
+    </div>
+
+    <div class="links-marimba">
+      <h3>Enlaces de interés</h3>
+      <a href="https://es.wikipedia.org/wiki/Marimba" target="_blank">¿Qué es la marimba? - Wikipedia</a>
+      <a href="https://www.prensalibre.com/vida/escenario/la-marimba-es-instrumento-nacional-y-simbolo-patrio-de-guatemala/" target="_blank">Historia de la marimba - Prensa Libre</a>
+    </div>
+  </section>
+
+  <section class="video">
+    <h2>Escucha la marimba en acción</h2>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/zVh_Rh31QVU?si=SViwKm4zJ3dUDUwy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <section class="formulario">
+    <h2>Formulario de contacto</h2>
+    <p>Déjanos tus datos si deseas recibir más información sobre nuestros eventos</p>
+    <form>
+      <input type="text" name="nombre" placeholder="Nombre" required />
+      <input type="text" name="apellido" placeholder="Apellido" required />
+      <input type="number" name="edad" placeholder="Edad" required />
+      <input type="text" name="direccion" placeholder="Dirección" required />
+      <input type="submit" value="Enviar datos" />
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Marimba Chapina. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
